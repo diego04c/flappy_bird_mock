@@ -36,7 +36,7 @@ document.body.onkeyup = function (e) {
     }
 }
 
-document.getElementById('restart-button').addEventListener('click ', function () {
+document.getElementById('restart-button').addEventListener('click', function () {
     hideEndMenu();
     resetGame();
     loop();
@@ -111,7 +111,6 @@ function collisionCheck() {
 function hideEndMenu() {
     document.getElementById('end-menu').style.display = 'none';
     gameContainer.classList.remove('backdrop-blur');
-
 }
 
 function showEndMenu() {
@@ -173,7 +172,6 @@ function loop() {
     birdY += birdVelocity
 
     increaseScore();
-
     requestAnimationFrame(loop);
 }
 
